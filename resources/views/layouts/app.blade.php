@@ -36,12 +36,12 @@
                     <ul class="navbar-nav mr-auto">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Data
+                                Kategoria
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{route('social.index')}}">Social</a>
-                                <a class="dropdown-item" href="{{route('finance.index')}}">Finance</a>
-                                <a class="dropdown-item" href="{{route('technical.index')}}">Technical</a>
+                                <a class="dropdown-item" href="{{route('social.index')}}">Sosial</a>
+                                <a class="dropdown-item" href="{{route('finance.index')}}">Finansas</a>
+                                <a class="dropdown-item" href="{{route('technical.index')}}">Teknikal</a>
                                 <!-- <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Something else here</a>
                                 </div> -->

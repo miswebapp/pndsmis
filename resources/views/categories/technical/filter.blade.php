@@ -10,15 +10,8 @@
 			<div class="form-group col-md-4">
 				<label for="cyle">Kategoria</label>
 				<select id='cycle' class="form-control form-control-sm rounded-sm">
-					 <option>Hotu-Hotu</option>
-					 <option>Partisipasaun Enkontru</option>
-					 <option>Partisipasaun Treinamentu</option>
-				</select>
-			</div>
-			<div class="form-group col-md-4">
-				<label for="cyle">Atividade</label>
-				<select id='cycle' class="form-control form-control-sm rounded-sm">
-					<option>Hotu-Hotu</option>
+					 <option>Projetu</option>
+					 <option>Progressu Fiziku</option>
 				</select>
 			</div>
 		</div>	

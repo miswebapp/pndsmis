@@ -30,3 +30,11 @@ $theme-colors: (
   "primary":$pnds-brown,
   "danger": #753625
 );
+
+.card-header {
+  padding:.50rem 1rem;
+}
+
+.card-body {
+  padding:1rem;
+}

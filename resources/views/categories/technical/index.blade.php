@@ -2,10 +2,12 @@
 
 @section('content')
 <div class="container">
+    <h4>Teknikal</h4>
     <div class="row justify-content-center">
         <div class="col-md-12">
+            @include('categories.technical.filter')
             <div class="card">
-                <div class="card-header">Technical</div>
+                <div class="card-header">Resultadu</div>
 
                 <div class="card-body">
                     @if (session('status'))

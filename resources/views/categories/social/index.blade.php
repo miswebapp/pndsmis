@@ -2,12 +2,13 @@
 
 @section('content')
 <div class="container">
+    <h4>Sosial</h4>
     <div class="row justify-content-center">
         <div class="col-md-12">
             @include('categories.shared.filter')
             <div class="card">
                 
-                <div class="card-header">Social</div>
+                <div class="card-header">Resultadu</div>
 
                 <div class="card-body">
                     @if (session('status'))

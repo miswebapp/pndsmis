@@ -1,0 +1,32 @@
+// Body
+$body-bg: darken(#bcdb9f, 10%);
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+$headings-color:#8A300F;
+$text-color:#191919;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$pnds-brown:#8A300F;
+$pnds-dark-yellow:#D9CD39;
+$pnds-orange:#FF804D;
+$pnds-light-green:#B3FC6E;
+$pnds-dark:#191919;
+
+// Card Customize
+$theme-colors: (
+  "primary":$pnds-brown,
+  "danger": #753625
+);

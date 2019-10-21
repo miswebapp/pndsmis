@@ -14,4 +14,9 @@ class Aldeia extends Model
     {
         return $this->belongsTo(Suco::class);
     }
+
+    public function project()
+    {
+        return $this->hasMany(Project::class,'Subproject_Aldea');
+    }
 }

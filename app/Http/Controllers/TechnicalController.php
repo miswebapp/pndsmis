@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Project;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class TechnicalController extends Controller
 {
@@ -13,7 +14,9 @@ class TechnicalController extends Controller
      */
     public function index()
     {
-        return view('categories.technical.index');
+        $projects = Project::paginate(10);
+        
+        return view('categories.technical.index', compact('projects'));
     }
 
     /**

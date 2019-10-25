@@ -21,3 +21,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('social','SocialController')->except('store','show','create','edit','update','destroy');
 Route::resource('finance','FinanceController')->except('store','show','create','edit','update','destroy');
 Route::resource('technical','TechnicalController')->except('store','show','create','edit','update','destroy');
+Route::get('/municipal/{municipal}','LocationController@getMunicipal');
+Route::get('/municipal','LocationController@getAllMunicipal');

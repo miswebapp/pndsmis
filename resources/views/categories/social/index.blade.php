@@ -8,8 +8,8 @@
         <div class="col-md-12">
             <div class="card mb-2" >
                 <div class="card-body">
-                        <filters></filters>
-            </div>
+                        
+                </div>
                 
             </div>
             <div class="card">             

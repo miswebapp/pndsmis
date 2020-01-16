@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Project;
+use App\Municipal;
+use App\Cycle;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -15,8 +17,10 @@ class TechnicalController extends Controller
     public function index()
     {
         $projects = Project::paginate(10);
+        $municipals = Municipal::all();
+        $cycles = Cycle::all();
         
-        return view('categories.technical.index', compact('projects'));
+        return view('categories.technical.index', compact('projects','municipals','cycles'));
     }
 
     /**

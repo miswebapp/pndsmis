@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Municipal extends Model
 {
     protected $connection = 'sqlsrv';
-    protected $table='dbo.zDistrict';
+    protected $table='zDistrict';
     protected $primaryKey = 'Distict_ID';
 
     public function posto()

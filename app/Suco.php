@@ -10,6 +10,10 @@ class Suco extends Model
     protected $table='dbo.zSuco';
     protected $primaryKey = 'Suco_ID';
 
+    public function sucocycles()
+    {
+        return $this->hasMany(SucoCycle::class,'Suco_ID');
+    }
     public function aldeia()
     {
         return $this->hasMany(Aldeia::class,'Suco_ID');

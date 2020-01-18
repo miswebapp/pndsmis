@@ -86,7 +86,7 @@ return [
             'username' => env('DB_USERNAME_REMOTE', 'sa'),
             'password' => env('DB_PASSWORD_REMOTE', 'PNDSmis2019'),
             'charset' => 'utf8',
-            'prefix' => '',
+            'prefix' => 'dbo.',
             'prefix_indexes' => true,
         ],
 

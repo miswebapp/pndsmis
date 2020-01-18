@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Aldeia extends Model
 {
     protected $connection = 'sqlsrv';
-    protected $table='dbo.zAldeia';
+    protected $table='zAldeia';
     protected $primaryKey = 'ID';
 
     public function suco()

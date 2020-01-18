@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class ProjectStatus extends Model
 {
     protected $connection ='sqlsrv';
-    protected $table = 'dbo.zSubprojectStatus';
+    protected $table = 'zSubprojectStatus';
     protected $primaryKey = 'SubprojectStatusID';
     
 }

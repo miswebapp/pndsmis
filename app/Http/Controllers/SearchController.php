@@ -2,24 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Project;
+use App\Search\ProjectSearch;
 use Illuminate\Http\Request;
 
 class SearchController extends Controller
 {
-    
-    public function search(Request $request , Project $project)
+    public function filter(Request $request)
     {
-        $check = $request['check'];
-
-        if($check === 'technical'){
-
-        }else if($check === 'social'){
-
-        }else if($check === 'finance'){
-
-        }else{
-
+        if($request['activity'] == 'project'){
+            return ProjectSearch::apply($request);
         }
-        return "Searching for your queries...!".$request['check'] ;
+        // else if($request->has('project_progress')){
+        //     return ProjectProgresSearch::apply($request);
+        // }
+
+       
     }
 }

@@ -23,4 +23,4 @@ Route::resource('finance','FinanceController')->except('store','show','create','
 Route::resource('technical','TechnicalController')->except('store','show','create','edit','update','destroy');
 Route::get('/municipal/{municipal}','LocationController@getMunicipal');
 Route::get('/municipal','LocationController@getAllMunicipal');
-Route::post('/searches','SearchController@search')->name('searches');
+Route::post('/searches','SearchController@filter')->name('searches');

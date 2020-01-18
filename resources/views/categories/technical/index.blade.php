@@ -26,7 +26,7 @@
                             <div class="form-group">
                                 <label>Siklu</label>
                                 <select name="cycle" class="form-control form-control-sm">
-                                    <option value="0">Hotu-Hotu</option>
+                                    <option value="">Hotu-Hotu</option>
                                     @foreach($cycles as $cycle)
                                         <option value="{{ $cycle->Cycle_ID }}">{{$cycle->Cycle_name}}</option>
                                     @endforeach

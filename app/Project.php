@@ -6,13 +6,23 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
     protected $connection = 'sqlsrv';
-    protected $table='dbo.Suco_SubProject';
+    protected $table='Suco_SubProject';
     protected $primaryKey = 'Suco_SubProject_ID';
     protected $dateFormat = 'U';
 
     public function location($id)
     {
        return Aldeia::find($id)->Aldeia_name;
+    }
+
+    public function sucoCycle()
+    {
+        return $this->belongsTo(SucoCycle::class);
+    }
+
+    public function cycle()
+    {
+        return $this->hasMany(Cycle::class);
     }
 
     public function status($id)

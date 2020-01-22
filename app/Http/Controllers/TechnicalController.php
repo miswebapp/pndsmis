@@ -16,7 +16,7 @@ class TechnicalController extends Controller
      */
     public function index()
     {
-        $projects = Project::paginate(10);
+        $projects = [];
         $municipals = Municipal::all();
         $cycles = Cycle::all();
         

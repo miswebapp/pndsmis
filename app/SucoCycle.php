@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class SucoCycle extends Model
 {
     protected $connection = 'sqlsrv';
-    protected $table='Suco_Cycles';
+    protected $table='dbo.Suco_Cycles';
     protected $primaryKey = 'Suco_CycleID';
 
     public function projects()

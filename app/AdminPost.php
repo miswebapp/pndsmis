@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class AdminPost extends Model
 {
     protected $connection = 'sqlsrv';
-    protected $table='zSubdistrict';
+    protected $table='dbo.zSubdistrict';
     protected $primaryKey = 'Subdistrict_ID';
 
     public function suco()

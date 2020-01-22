@@ -5,12 +5,13 @@ use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Model;
 
 class ProjectProgresSearch {
-    public static function apply(Request $request,  Project $project)
+    public static function apply(Request $filters)
     {
-        if($request->has('cycle')){
-            
+        $project = (new Project)->newQuery();
+        if($filters->has('cycle')){
+            $project->sucoCycle->where('CycleID','=',$request('cycle'));
         }
-        return "Searching for your queries...!";
+        return $project()->get();
     }
 }
 

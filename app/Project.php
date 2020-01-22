@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
     protected $connection = 'sqlsrv';
-    protected $table='Suco_SubProject';
+    protected $table='dbo.Suco_SubProject';
     protected $primaryKey = 'Suco_SubProject_ID';
     protected $dateFormat = 'U';
 
@@ -17,7 +17,7 @@ class Project extends Model
 
     public function sucoCycle()
     {
-        return $this->belongsTo(SucoCycle::class);
+        return $this->belongsTo(SucoCycle::class,'Suco_CycleID');
     }
 
     public function cycle()

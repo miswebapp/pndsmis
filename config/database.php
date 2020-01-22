@@ -84,9 +84,9 @@ return [
             'port' => env('DB_PORT_REMOTE', '1433'),
             'database' => env('DB_DATABASE_REMOTE', 'PNDSMIS'),
             'username' => env('DB_USERNAME_REMOTE', 'sa'),
-            'password' => env('DB_PASSWORD_REMOTE', 'PNDSmis2019'),
+            'password' => env('DB_PASSWORD_REMOTE', 'Pndsmis2019'),
             'charset' => 'utf8',
-            'prefix' => 'dbo.',
+            'prefix' => '',
             'prefix_indexes' => true,
         ],
 

@@ -73,7 +73,7 @@
                         </div>
                     @endif
                     <div id="app">
-                        <projects-component></projects-component>
+                       <projects></projects>
                     </div>        
                 </div>
             </div>

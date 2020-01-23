@@ -7,14 +7,15 @@ use App\Municipal;
 use App\Cycle;
 use App\Search\ProjectSearch;
 use Illuminate\Http\Request;
+use Illuminate\Contracts\Routing\ResponseFactory;
 
 
 class SearchController extends Controller
 {
-    public function filter(Request $request)
+    public function filter(Request $request , ResponseFactory $response)
     {
-        $municipals = Municipal::all();
-        $cycles = Cycle::all();
+        // $municipals = Municipal::all();
+        // $cycles = Cycle::all();
         $projects = '';
         if($request['activity'] == 'project'){
             $projects = ProjectSearch::apply($request);
@@ -26,4 +27,5 @@ class SearchController extends Controller
 
         
     }
+
 }

@@ -2,7 +2,7 @@ import Axios from "axios"
 
 let actions = {
     fetchProjects({commit}){
-        axios.get('/searches')
+        axios.get('/fetch/projects')
                 .then(res => {
                     commit('FETCH_PROJECTS', res.data)
                 })

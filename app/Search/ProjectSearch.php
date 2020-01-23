@@ -23,7 +23,7 @@ class ProjectSearch {
             $project->where('dbo.zDistrict.Distict_ID','=',$filter->input('municipal'));
         }
         $project->select('dbo.zCycles.Cycle_name','dbo.zDistrict.District_name','dbo.zSubdistrict.Subdistrict_name','dbo.zSuco.Suco_Name','dbo.Suco_Subproject.*');
-        return $project->paginate(15);
+        return $project->get();
         // return "Searching for your queries...!";
     }
 }

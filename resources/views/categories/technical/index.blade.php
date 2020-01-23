@@ -72,53 +72,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    @if(count($projects) > 0)
-                    <div class="d-flex bd-highlight">
-                            <div class="p-1 flex-grow-1 bd-highlight">
-                                    <table class="table able-hover table-condensed table-striped table-bordered table-sm">
-                                            <thead>
-                                                <tr>
-                                                        <th scope="col">Siklu</th>
-                                                        <th scope="col">Munisipiu</th>
-                                                        <th scope="col">PA</th>
-                                                        <th scope="col">Suco</th>
-                                                        <th scope="col">Aldeia</th>
-                                                        <th scope="col">Projetu</th>
-                                                        <th scope="col">Hahu</th>
-                                                        <th scope="col">Remata</th>
-                                                        <th scope="col">Status</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                               
-                                                    @foreach($projects as $project)
-                                                    <tr>
-                                                        <td>{{ $project->Cycle_name}}</td>
-                                                        <td>{{ $project->District_name}}</td>
-                                                        <td>{{ $project->Subdistrict_name}}</td>
-                                                        <td>{{ $project->Suco_Name}}</td>
-                                                        <td>{{ $project->location($project->Subproject_Aldea)}}</td>
-                                                        <td>{{ $project->Subproject_Name}}</td>
-                                                        <td>{{ $project->start_date}}</td>
-                                                        <td>{{ $project->finish_date}}</td>
-                                                        <td>{{ $project->status($project->SubprojectStatusID)}}</td>
-                                                    
-                                                    </tr>
-                                                    @endforeach
-                                                
-                                            </tbody>
-                    
-                                        </table>
-                                        <div class="mx-auto">
-                                                {{ $projects->links() }}
-                                        </div>
-                                        
-                            </div>
-                            <div class="p-2 bd-highlight">
-                                
-                               </div>
-                               @endif
-                    </div>                 
+                    <div id="app">
+                        <projects-component></projects-component>
+                    </div>        
                 </div>
             </div>
         </div>

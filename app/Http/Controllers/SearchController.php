@@ -15,10 +15,15 @@ class SearchController extends Controller
     {
         $municipals = Municipal::all();
         $cycles = Cycle::all();
+        $projects = '';
         if($request['activity'] == 'project'){
             $projects = ProjectSearch::apply($request);
             // return view('categories.technical.index', compact('projects','municipals','cycles'));
-            return $response->json($projects);
+        }else{
+            $projects = ProjectSearch::apply($request);
         }
+        return $response->json($projects);
+
+        
     }
 }

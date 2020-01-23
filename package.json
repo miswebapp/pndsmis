@@ -19,6 +19,7 @@
         "eslint-plugin-prettier": "^3.1.1",
         "eslint-plugin-vue": "^5.2.3",
         "jquery": "^3.2",
+        "laravel-elixir-vue-2": "^0.3.0",
         "laravel-mix": "^4.0.7",
         "lodash": "^4.17.13",
         "popper.js": "^1.12",
@@ -32,6 +33,7 @@
     },
     "dependencies": {
         "vue-select": "^3.2.0",
-        "vuetify": "^2.1.7"
+        "vuetify": "^2.1.7",
+        "vuex": "^3.1.2"
     }
 }

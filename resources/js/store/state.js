@@ -1,5 +1,7 @@
 let state = {
-    projects: []
+    projects: [],
+    cycles:[],
+    municipals:[]
 }
 
 export default state

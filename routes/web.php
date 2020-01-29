@@ -25,3 +25,5 @@ Route::get('/municipal/{municipal}','LocationController@getMunicipal');
 Route::get('/municipal','LocationController@getAllMunicipal');
 Route::post('/searches','SearchController@filter')->name('searches');
 Route::get('/fetch/projects','SearchController@filter');
+Route::get('/fetch/cycles', 'FilterController@getCycles');
+Route::get('/fetch/municipals', 'FilterController@getMunicipals');

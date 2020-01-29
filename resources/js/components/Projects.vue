@@ -15,7 +15,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for= "project in projects">
+                    <tr v-for="project in projects">
                             <td>{{ project.Cycle_name }}</td>
                             <td>{{ project.District_name}}</td>
                             <td>{{ project.Subdistrict_name}}</td>

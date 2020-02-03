@@ -1,7 +1,8 @@
 let state = {
     projects: [],
     cycles:[],
-    municipals:[]
+    municipals:[],
+    filters : []
 }
 
 export default state

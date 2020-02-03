@@ -14,8 +14,6 @@ class SearchController extends Controller
 {
     public function filter(Request $request , ResponseFactory $response)
     {
-        // $municipals = Municipal::all();
-        // $cycles = Cycle::all();
         $projects = '';
         if($request['activity'] == 'project'){
             $projects = ProjectSearch::apply($request);
@@ -24,8 +22,7 @@ class SearchController extends Controller
             $projects = ProjectSearch::apply($request);
         }
         return $response->json($projects);
-
-        
+       
     }
 
 }

@@ -3,10 +3,13 @@ let getters = {
         return state.projects
     },
     cycles: state => {
-        return state.cycles
+        return state.filters.cycles
     },
     municipals: state => {
-        return state.municipals
+        return state.filters.municipals
+    },
+    filters: state => {
+        return state.filters
     }
 }
 

@@ -4,7 +4,7 @@ let actions = {
     fetchProjects({commit}){
         axios.get('/fetch/projects')
                 .then(res => {
-                    commit('FETCH_PROJECTS', res.data)
+                    commit('ADD_SEARCH_RESULT', res.data)
                 })
                 .catch(err => {
                     console.log(err)
@@ -28,10 +28,10 @@ let actions = {
                     console.log(err)
                 })
     },
-    fetchSeach({commit}){
-        axios.post('/searches')
+    sendSeachFilters({commit}, filter){
+        axios.post('/searches', filter)
                 .then(res => {
-                    commit('FETCH_PROJECTS', res.data)
+                    commit('ADD_SEARCH_RESULT', res.data)
                 })
                 .catch(err => {
                     console.log(err)

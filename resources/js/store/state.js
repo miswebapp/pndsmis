@@ -1,8 +1,15 @@
 let state = {
     projects: [],
     cycles:[],
+    phases:[],
     municipals:[],
-    filters : []
+    filters : [],
+    selectedFilters:{
+        activity:'',
+        municipal:'',
+        cycle:'',
+        phase:''
+    }
 }
 
 export default state

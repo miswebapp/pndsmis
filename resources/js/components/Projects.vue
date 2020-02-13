@@ -1,10 +1,14 @@
 <template>
-    <div class="d-flex bd-highlight">
+<div class="card">
+    <div class="card-header"><h4>Resultadu</h4></div>
+    <div class="card-body">
+        <div class="d-flex bd-highlight">
         <div class="p-1 flex-grow-1 bd-highlight">
             <table class="table able-hover table-condensed table-striped table-bordered table-sm">
                 <thead>
                     <tr>
                         <th scope="col">Siklu</th>
+                        <th scope="col">Faze</th>
                         <th scope="col">Munisipiu</th>
                         <th scope="col">PA</th>
                         <th scope="col">Suco</th>
@@ -17,6 +21,7 @@
                 <tbody>
                     <tr v-for="project in projects">
                             <td>{{ project.Cycle_name }}</td>
+                            <td>{{ project.Phase }}</td>
                             <td>{{ project.District_name}}</td>
                             <td>{{ project.Subdistrict_name}}</td>
                             <td>{{ project.Suco_Name}}</td>
@@ -30,7 +35,9 @@
             <div class="mx-auto"></div>
         </div>
         <div class="p-2 bd-highlight"></div>
-    </div>   
+        </div>   
+    </div>
+</div>
 </template>
 
 <script>

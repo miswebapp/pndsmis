@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Phase;
 use App\Cycle;
 use App\Municipal;
 use Illuminate\Http\Request;
@@ -19,5 +20,10 @@ class FilterController extends Controller
     {
         $municipals = Municipal::all();
         return $response->json($municipals);
+    }
+
+    public function getPhases(ResponseFactory $response){
+        $phases = Phase::all();
+        return $response->json($phases);
     }
 }

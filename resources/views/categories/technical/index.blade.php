@@ -10,18 +10,8 @@
                     {{ session('status') }}
                 </div>
             @endif
-            <div class="col-md-12">         
-                <div class="card mb-4">
-                    <filters></filters>
-                    {{--  --}}
-                </div>
-                </div>   
-                <div class="card">
-                    <div class="card-header"><h4>Resultadu</h4></div>
-                    <div class="card-body">
-                        <projects></projects>        
-                    </div>
-                </div>
+            <div class="col-md-12 fixed">         
+                <filters-component></filters-component>
             </div>
     </div>
 </div>

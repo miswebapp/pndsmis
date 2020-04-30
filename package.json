@@ -18,7 +18,7 @@
         "eslint-config-prettier": "^6.9.0",
         "eslint-plugin-prettier": "^3.1.2",
         "eslint-plugin-vue": "^5.2.3",
-        "jquery": "^3.2",
+        "jquery": "^3.5",
         "laravel-elixir-vue-2": "^0.3.0",
         "laravel-mix": "^4.0.7",
         "lodash": "^4.17.13",
